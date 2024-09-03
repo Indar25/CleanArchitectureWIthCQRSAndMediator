@@ -1,0 +1,10 @@
+# Example .gitignore content for .NET
+bin/
+obj/
+*.user
+*.suo
+*.dll
+*.exe
+*.pdb
+*.cache
+*.vs/

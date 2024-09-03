@@ -1,0 +1,6 @@
+@CleanArchitectureWIthCQRSAndMediator_HostAddress = http://localhost:5102
+
+GET {{CleanArchitectureWIthCQRSAndMediator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
