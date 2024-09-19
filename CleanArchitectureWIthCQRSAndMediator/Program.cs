@@ -1,5 +1,6 @@
 using CleanArchitectureWIthCQRSAndMediator.Application;
 using CleanArchitectureWIthCQRSAndMediator.Infrastructure;
+using CleanArchitectureWIthCQRSAndMediator.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.OpenApi.Models;
 
@@ -17,6 +18,9 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
 });
 
+
+// Register KafkaSettings with the DI container
+builder.Services.AddKafkaConfig(builder.Configuration);
 builder.Services.AddControllers();
 
 var app = builder.Build();
